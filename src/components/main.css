@@ -1,0 +1,67 @@
+.main {
+    background-color: var(--Dark-blue);
+    border-radius: 1em;
+    margin-bottom: 1.5em;
+}
+
+.main__top {
+    background-color: var(--Blue);
+    display: flex;
+    padding: 2em 1.8em;
+    border-radius: 1em;
+    align-items: center;
+}
+
+.main__top__avatar-container {
+    /* padding: 1em; */
+    height: 4.4em;
+    width: 4.4em;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__top__profile {
+    color: var(--Pale-Blue);
+}
+
+.main__top__profile__title {
+    font-size: 0.94em;
+    margin-bottom: 0.3em;
+}
+
+
+.main__top__profile__name {
+    font-size: 1.46em;
+}
+
+.main__top__avatar {
+    height: 90%;
+    width: 90%;
+}
+
+.main__bottom {
+    padding: 1.5em 1.3em 1.5em 2.1em;
+    display: flex;
+}
+
+.main__bottom__day {
+    font-size: 1.1em;
+    color: var(--Desaturated-blue);
+    cursor: pointer;
+}
+
+.main__bottom__day:first-child {
+    margin-right: 3.5em;
+}
+
+.main__bottom__day:last-child {
+    margin-left: 2.7em;
+}
+
+.main__bottom__day_chosen {
+    color: white;
+}

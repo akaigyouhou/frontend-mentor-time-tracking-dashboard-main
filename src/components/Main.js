@@ -22,7 +22,7 @@ const Main = ({time, setTime}) => {
                 </div>
                 <div className="main__top__profile">
                     <div className="main__top__profile__title">Report for</div>
-                    <div className="main__top__profile__name">Jeremy Robson</div>
+                    <h1 className="main__top__profile__name">Jeremy Robson</h1>
                 </div>
             </div>
             <div className="main__bottom">

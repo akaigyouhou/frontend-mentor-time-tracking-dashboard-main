@@ -5,7 +5,7 @@ const Card = ({title, timeframes, time}) => {
     const timeChoosen = timeframes[time.toLowerCase()];
 
     return (
-        <section className={`card card__${title.toLowerCase().replace(" ", "-")}`}>
+        <div className={`card card__${title.toLowerCase().replace(" ", "-")}`}>
             <div className="card__top"></div> 
             <div className="card__bottom">
                 <div className="card__bottom__title-line">
@@ -17,7 +17,7 @@ const Card = ({title, timeframes, time}) => {
                     <div className="card__bottom__previous-time">Last Week - {timeChoosen.previous}hrs</div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
 

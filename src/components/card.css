@@ -52,21 +52,41 @@
 .card__top {
     padding-top: 1.2em;
     padding-bottom: 1.2em;
-
 }
 
 .card__bottom {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     background-color: var(--Dark-blue);
     padding: 1.7em 1.5em 1.8em;
     border-radius: 1em;
+    /* cursor: pointer; */
+}
+.card__bottom:hover {
+    background-color: hsl(236, 41%, 34%);
+}
+
+.card__bottom__title-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .35em;
 }
 
 .card__bottom__title {
     color: white;
-    font-size: 1.2em;
-    margin-bottom: .3em;
+    font-size: 1.18em;
+}
+
+.card__bottom__ellipsis {
+    cursor: pointer;
+    margin-top: .1em;
+}
+
+.card__bottom__time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card__bottom__current-time {
@@ -75,18 +95,67 @@
     font-weight: 300;
 }
 
-.card__bottom__right {
-    text-align: end;
-}
-
-.card__bottom__ellipsis {
-    padding-top: 0.6em;
-    margin-bottom: 1.2em;
-    cursor: pointer;
-}
-
 .card__bottom__previous-time {
     color: var(--Pale-Blue);
     font-size: .94em;
+}
+
+@media (min-width: 800px) {
+    .card {
+        margin: 0;
+        border-radius: 0.9em;
+    }
+    .card__work {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        background-position: 90% -7%
+    }
+    .card__play {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        background-position: 88% -3%
+    }
+    .card__study {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+        background-position: 91% -5%
+    }
+    .card__exercise {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        background-position: 90% -1%
+    }
+    .card__social {
+        grid-column: 3/ 4;
+        grid-row: 2 / 3;
+        background-position: 93% -11%
+    }
+    .card__self-care {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+        background-position: 93% -6%
+    }
+    .card__top {
+        padding-top: 1.4em;
+        padding-bottom: 1.4em;
+    }
+    .card__bottom {
+        border-radius: 0.9em;
+        padding: 1.75em 1.9em 2em 1.9em;
+    }
+    .card__bottom__title-line {
+        margin-bottom: 1.5em;
+    }
+    .card__bottom__ellipsis {
+        margin-top: 0;
+    }
+    .card__bottom__time {
+        flex-direction: column;
+        align-items: normal;
+    }
+    .card__bottom__current-time {
+        font-size: 3.5em;
+        margin-bottom: 0.14em;
+    }
 }
 

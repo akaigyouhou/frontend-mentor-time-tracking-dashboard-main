@@ -7,3 +7,23 @@
   padding-bottom: 5em;
   background-color: var(--Very-dark-blue);
 }
+
+@media (min-width: 800px) {
+  .App {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 100vh;
+  }
+  .container {
+    display: grid;
+    height: 50.5vh;
+    width: 77vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 1.8em;
+    row-gap: 1.85em;
+  }
+}

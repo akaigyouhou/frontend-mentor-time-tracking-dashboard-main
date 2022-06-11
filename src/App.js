@@ -12,10 +12,12 @@ function App() {
 
   return (
     <div className="App">
-      <Main time={time} setTime={setTime} />
-      {data.map(({title, timeframes}, index) => (
-        <Card key={title} title={title} timeframes={timeframes} time={time} />
-      ))}
+      <div className="container">
+        <Main time={time} setTime={setTime} />
+        {data.map(({title, timeframes}, index) => (
+          <Card key={title} title={title} timeframes={timeframes} time={time} />
+        ))}
+      </div>
     </div>
   );
 }

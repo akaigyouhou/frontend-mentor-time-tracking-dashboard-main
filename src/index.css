@@ -26,6 +26,12 @@ body {
   /* background-image: url("../design/mobile-design.jpg"); */
 }
 
+/* @media (min-width: 800px) {
+  body {
+    background-image: url("../design/desktop-design.jpg");
+  }
+} */
+
 *,
 ::before,
 ::after {

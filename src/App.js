@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import Main from './components/Main';
+import Profile from './components/Profile';
 import Card from './components/Card';
 
 import data from './data.json';
@@ -12,12 +12,12 @@ function App() {
 
   return (
     <div className="App">
-      <div className="container">
-        <Main time={time} setTime={setTime} />
+      <main className="container">
+        <Profile time={time} setTime={setTime} />
         {data.map(({title, timeframes}, index) => (
           <Card key={title} title={title} timeframes={timeframes} time={time} />
         ))}
-      </div>
+      </main>
     </div>
   );
 }
